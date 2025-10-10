@@ -1,0 +1,7 @@
+Prerequisites:
+None
+
+Requirements:
+mdtraj
+matplotlib
+jupyter

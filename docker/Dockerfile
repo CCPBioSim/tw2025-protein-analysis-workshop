@@ -17,7 +17,7 @@ COPY --chown=1000:100 . .
 RUN rm -rf INSTALL.txt LICENSE README.md docker .git .github
 
 # Copy updated lab workspace
-#COPY --chown=1000:100 docker/default-37a8.jupyterlab-workspace /home/jovyan/.jupyter/lab/workspaces/default-37a8.jupyterlab-workspace
+COPY --chown=1000:100 docker/default-37a8.jupyterlab-workspace /home/jovyan/.jupyter/lab/workspaces/default-37a8.jupyterlab-workspace
 
 # UNCOMMENT THIS LINE FOR REMOTE DEPLOYMENT
 COPY docker/jupyter_notebook_config.py /etc/jupyter/
